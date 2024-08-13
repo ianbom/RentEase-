@@ -10,6 +10,7 @@
         <p class="text-gray-700 mb-6">{{ $toko->deskripsi }}</p>
         <p class="text-sm text-gray-500 mb-4">Alamat: {{ $toko->alamat_toko }}</p>
         <p class="text-sm text-gray-500">Pemilik: {{ $toko->user->name }}</p>
+        <a class="text-blue-500 hover:underline" href="{{ route('user', $toko->user->id) }}">Chat Pemilik Toko</a> <br>
         <a href="{{ route('index.toko') }}" class="text-blue-500 hover:underline">Kembali ke Daftar Toko</a>
     </div>
 

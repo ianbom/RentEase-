@@ -12,6 +12,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/porto', function () {
+    return view('order.porto');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
